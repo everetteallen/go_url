@@ -7,6 +7,7 @@ When setting up the Google Cloud Function must set the following as Runtime Vari
 
 searchCol = "A"
 - This is the column in the GSheet to search for the keyword
+
 dataCol = "B"
 - This is the column in the GSheet with the target redirect URL
 
