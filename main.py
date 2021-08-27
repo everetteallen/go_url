@@ -11,10 +11,6 @@ def go_url(request):
     dataCol = os.environ.get('dataCol')
     sheetID = os.environ.get('sheetID')
     
-    # searchCol = "A"    # usually A
-    # dataCol = "B"     # usually B
-    # sheetID = "1y9Kbi2rCCzEgdj9Cs5pf914g2paS1jI6u9X6cpUEfbY"
-
     # query the google sheet to get the url from the patch title  
     # Example: column A has keyword to lookup and column B has URL to redirect to
     sheetLink = "https://docs.google.com/spreadsheets/d/" + sheetID + "/gviz/tq?tqx=out:csv&tq=%20select%20" + dataCol + "%20WHERE%20" + searchCol + "=%27" + request_string + "%27"
